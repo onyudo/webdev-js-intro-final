@@ -28,7 +28,7 @@ function restart() {
 // function check guess. Have to check the guess input vs the randomly selected number
 function checkGuess() {
 
-    // const player guess, input value
+    // constant for player guess, input value
 
     // Validate that the input is a number, use isNAN
 
