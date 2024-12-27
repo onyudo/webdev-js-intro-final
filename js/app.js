@@ -13,12 +13,15 @@ const guessInput = document.getElementById("guess-input");
 // let the program keep track of the number guessed and number of guesses, probably using an array
 
 // function start the game
+function startGame() {
     // define how the program picks a random number between 1-10
     // keep track of attempts?
 
     // gotta do something about the enabled/disbale state of the buttons?
+}
 
 // Function to start the game when the page is loaded
+function startGame();
 
 function restart() {
      // reset the program to start the game function
@@ -41,7 +44,6 @@ function checkGuess() {
         // if yes: "you win" or whatever and end the game
         // else if not correct and number of guess is greater than or equal to 3 "you loose, the number was x"
         // else your input was too low or too high, guess input compared to randomly chosen number
-
 }
 
 // function for ending the game?
