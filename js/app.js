@@ -22,6 +22,7 @@ function startGame() {
 
 function restart() {
      // reset the program to start the game function
+     startGame();
 }
 
 // function check guess. Have to check the guess input vs the randomly selected number
