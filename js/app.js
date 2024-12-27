@@ -8,9 +8,9 @@ const guessInput = document.getElementById("guess-input");
 // constant for computerGuess
 // constant for guessHistory
 
-// let the program choose a random number
+// let the program choose a random number, an empty variable?
 // let the program keep track of attempts, starting at zero
-// let the program keep track of the number of guesses, probably using an array
+// let the program keep track of the number guessed and number of guesses, probably using an array
 
 // function start the game
     // define how the program picks a random number between 1-10
@@ -34,10 +34,10 @@ function restart() {
     // Update the guess history?
 
     // Check if the input guess is correct
-        // guess equal to random number?
+        // is guess equal to random number?
         // if yes: "you win" or whatever and end the game
         // else if not correct and number of guess is greater than or equal to 3 "you loose, the number was x"
-        // else your input was too low or too high
+        // else your input was too low or too high, guess input compared to randomly chosen number
 
 // function for ending the game?
 
