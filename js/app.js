@@ -24,7 +24,9 @@ function restart() {
      // reset the program to start the game function
 }
 
-// Have to check the guess input vs the randomly selected number
+// function check guess. Have to check the guess input vs the randomly selected number
+
+    // const player guess, input value
 
     // Validate that the input is a number, use isNAN
 
