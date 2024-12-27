@@ -25,6 +25,7 @@ function restart() {
 }
 
 // function check guess. Have to check the guess input vs the randomly selected number
+function checkGuess() {
 
     // const player guess, input value
 
@@ -40,6 +41,8 @@ function restart() {
         // if yes: "you win" or whatever and end the game
         // else if not correct and number of guess is greater than or equal to 3 "you loose, the number was x"
         // else your input was too low or too high, guess input compared to randomly chosen number
+
+}
 
 // function for ending the game?
 
