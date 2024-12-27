@@ -10,7 +10,7 @@ const guessInput = document.getElementById("guess-input");
 
 // let the program choose a random number, an empty variable?
 // let the program keep track of attempts, starting at zero
-// let the program keep track of the number guessed and number of guesses, probably using an array
+// let the program keep track of the number guessed, probably using an array
 
 // function start the game
 function startGame() {
@@ -20,8 +20,8 @@ function startGame() {
     // gotta do something about the enabled/disbale state of the buttons?
 }
 
+// reset the program to start the game function
 function restart() {
-     // reset the program to start the game function
      startGame();
 }
 
