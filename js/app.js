@@ -20,9 +20,6 @@ function startGame() {
     // gotta do something about the enabled/disbale state of the buttons?
 }
 
-// Function to start the game when the page is loaded
-function startGame();
-
 function restart() {
      // reset the program to start the game function
 }
@@ -57,3 +54,6 @@ submissionBtn.addEventListener("click", function () {
 restartBtn.addEventListener("click", function () {
     restart();
 });
+
+// Function to start the game when the page is loaded
+startGame();
