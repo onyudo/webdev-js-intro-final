@@ -22,8 +22,9 @@ let guessHistoryList = [];
 // function start the game
 function startGame() {
     // define how the program picks a random number between 1-10
-    // keep track of attempts?
-
+    randomNumber = Math.floor(Math.random() * 10) + 1;
+    // keep track of attempts? starts at zero at game start
+    attempts = 0;
     // gotta do something about the enabled/disbale state of the buttons?
     // Button initial states at start of game
     submissionBtn.disabled = false;
