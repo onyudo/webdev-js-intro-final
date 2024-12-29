@@ -22,6 +22,9 @@ function startGame() {
     // keep track of attempts?
 
     // gotta do something about the enabled/disbale state of the buttons?
+    // Button initial states at start of game
+    submissionBtn.disabled = false;
+    restartBtn.disabled = true;
 }
 
 // reset the program to start the game function
@@ -48,7 +51,11 @@ function checkGuess() {
         // else your input was too low or too high, guess input compared to randomly chosen number
 }
 
-// function for ending the game?
+// function for ending the game. Disables the submit button and enables the restart button
+function endGame() {
+    submissionBtn.disabled = true;
+    restartBtn.disabled = false;
+}
 
 // handle the submit button click
 submissionBtn.addEventListener("click", function () {
