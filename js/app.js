@@ -26,7 +26,7 @@ function startGame() {
     // keep track of attempts? starts at zero at game start
     attempts = 0;
     // Do I need to clear off other display messages from the previous game?
-    
+
     // gotta do something about the enabled/disbale state of the buttons?
     // Button initial states at start of game
     submissionBtn.disabled = false;
@@ -74,4 +74,4 @@ restartBtn.addEventListener("click", function () {
 });
 
 // Function to start the game when the page is loaded
-startGame();
+startGame(); // Gameplay is set to launch on page load
