@@ -13,8 +13,11 @@ const computerGuess = document.getElementById("computer-guess");
 const guessHistory = document.getElementById("guess-history");
 
 // let the program choose a random number, an empty variable?
+let randomNumber;
 // let the program keep track of attempts, starting at zero
+let attempts = 0;
 // let the program keep track of the number guessed, probably using an array
+let guessHistoryList = [];
 
 // function start the game
 function startGame() {
