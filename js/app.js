@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 
 const submissionBtn = document.getElementById("submit-btn");
 const restartBtn = document.getElementById("restart-btn");
