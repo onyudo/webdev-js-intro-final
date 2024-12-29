@@ -22,6 +22,14 @@ let guessHistoryList = [];
 // function start the game
 function startGame() {
     // define how the program picks a random number between 1-10
+    
+    /*
+    Math.random(): Generates a random number between 0 and 1.
+    * 10: Multiplies the random number by 10, giving a range between 0 and 10.
+    Math.floor(): Rounds the number down to the nearest whole number, giving a range between 0 and 9.
+    + 1: Adds 1 to shift the range to 1 and 10.
+    */
+
     randomNumber = Math.floor(Math.random() * 10) + 1;
     // keep track of attempts? starts at zero at game start
     attempts = 0;
