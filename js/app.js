@@ -1,12 +1,16 @@
-"use strict";
+//"use strict";
 
 const submissionBtn = document.getElementById("submit-btn");
 const restartBtn = document.getElementById("restart-btn");
 const guessInput = document.getElementById("guess-input");
 // constant for guessMessage
+const guessMessage = document.getElementById("guess-message");
 // constant for currentGuess
+const currentGuess = document.getElementById("current-guess");
 // constant for computerGuess
+const computerGuess = document.getElementById("computer-guess");
 // constant for guessHistory
+const guessHistory = document.getElementById("guess-history");
 
 // let the program choose a random number, an empty variable?
 // let the program keep track of attempts, starting at zero
