@@ -24,18 +24,21 @@ function startGame() {
     // define how the program picks a random number between 1-10
     
     /*
-    Math.random(): Generates a random number between 0 and 1.
-    * 10: Multiplies the random number by 10, giving a range between 0 and 10.
-    Math.floor(): Rounds the number down to the nearest whole number, giving a range between 0 and 9.
-    + 1: Adds 1 to shift the range to 1 and 10.
+    Math.random(): Generates a random number between 0 and 1, i.e., 0.2346
+    * 10: Multiplies the random number by 10, giving a range between 0 and 10, i.e., 2.346
+    Math.floor(): Rounds the number down to the nearest whole number, giving a range between 0 and 9, i.e., 2
+    + 1: Adds 1 to shift the range to 1 and 10, i.e., 3
     */
 
     randomNumber = Math.floor(Math.random() * 10) + 1;
+
     // keep track of attempts? starts at zero at game start
     attempts = 0;
+
     // Do I need to clear off other display messages from the previous game?
 
     // gotta do something about the enabled/disbale state of the buttons?
+
     // Button initial states at start of game
     submissionBtn.disabled = false;
     restartBtn.disabled = true;
@@ -82,4 +85,4 @@ restartBtn.addEventListener("click", function () {
 });
 
 // Function to start the game when the page is loaded
-startGame(); // Gameplay is set to launch on page load
+startGame(); // Gameplay is set to start on page load
