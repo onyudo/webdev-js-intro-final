@@ -43,7 +43,7 @@ If you get stuck, write psuedocode and break the game's functionality and logic 
 - [x] The span with the id of `guess-history` should output your guess history.
 - [x] The "Submit Guess" button should be enabled at the beginning of the game, but when the game is over it should be disabled.
 - [x] The "Restart" button should be disabled at the beginning of the game, but when the game is over it should be enabled.
-- [ ] When the "Restart" button is clicked, all values and text output should reset.
+- [x] When the "Restart" button is clicked, all values and text output should reset.
 
 
 ### Tips
