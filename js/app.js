@@ -55,7 +55,7 @@ function restart() {
 function checkGuess() {
 
     // constant for player guess, input value
-    // get the value from the guessInput field, convert that value (which is a string) into an number, and then assign the result to the variable playerGuess
+    // get the value from the guessInput field, convert that value (which is a string) into a number, and then assign the result to the variable playerGuess
     const playerGuess = parseInt(guessInput.value);
 
     // Validate that the input is a number, use isNaN
@@ -65,14 +65,18 @@ function checkGuess() {
     }
 
     // Increment the guess counter
-    // Push the number to the list keeping track of guesses
+    attempts++;
+
+    // Push the number to the array keeping track of guesses
+    guessHistoryList.push(playerGuess);
 
     // Update the guess history?
+
 
     // Check if the input guess is correct
         // is guess equal to random number?
         // if yes: "you win" or whatever and end the game
-        // else if not correct and number of guess is greater than or equal to 3 "you loose, the number was x"
+        // else if not correct and number of guesses is greater than or equal to 3 "you loose, the number was x"
         // else your input was too low or too high, guess input compared to randomly chosen number
 }
 
