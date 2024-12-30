@@ -24,15 +24,14 @@ let guessHistoryList = [];
 
 // function start the game
 function startGame() {
+
     // define how the program picks a random number between 1-10
-    
     /*
     Math.random(): Generates a random number between 0 and 1, i.e., 0.2346
     * 10: Multiplies the random number by 10, giving a range between 0 and 10, i.e., 2.346
     Math.floor(): Rounds the number down to the nearest whole number, giving a range between 0 and 9, i.e., 2
     + 1: Adds 1 to shift the range to 1 and 10, i.e., 3
     */
-
     randomNumber = Math.floor(Math.random() * 10) + 1;
 
     // keep track of attempts? starts at zero at game start
@@ -43,18 +42,18 @@ function startGame() {
     // Do I need to clear off other display messages and variables from a previous game?
     // YES, I DO
     // Reset guess history array
-    
+    guessHistoryList = [];
     // Reset guess message
-    
+    guessMessage.innerText = "";
     // Reset curent guess
-    
+    currentGuess.innerText = "";
     // Reset computer guess
-    
+    computerGuess.innerText = "";
     // Resets guess history
-    
+    guessHistory.innerText = "";
     // Clears guess input field
+    guessInput.value = "";  
     
-
     // gotta do something about the enabled/disbale state of the buttons?
     // Button initial states at start of game
     submissionBtn.disabled = false;
