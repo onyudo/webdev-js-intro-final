@@ -42,6 +42,18 @@ function startGame() {
 
     // Do I need to clear off other display messages and variables from a previous game?
     // YES, I DO
+    // Reset guess history array
+    
+    // Reset guess message
+    
+    // Reset curent guess
+    
+    // Reset computer guess
+    
+    // Resets guess history
+    
+    // Clears guess input field
+    
 
     // gotta do something about the enabled/disbale state of the buttons?
     // Button initial states at start of game
