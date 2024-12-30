@@ -17,6 +17,7 @@ let randomNumber;
 // let the program keep track of attempts, starting at zero
 let attempts = 0;
 // let the program keep track of the number guessed, probably using an array
+// will need to push guesses into this array and output them, probably in the checkGuess function
 let guessHistoryList = [];
 
 // function start the game
@@ -38,7 +39,6 @@ function startGame() {
     // Do I need to clear off other display messages from the previous game?
 
     // gotta do something about the enabled/disbale state of the buttons?
-
     // Button initial states at start of game
     submissionBtn.disabled = false;
     restartBtn.disabled = true;
