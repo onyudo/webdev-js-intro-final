@@ -71,7 +71,7 @@ function checkGuess() {
     guessHistoryList.push(playerGuess);
 
     // Update the guess history?
-
+    guessHistory.innerText = guessHistoryList.join(", ");
 
     // Check if the input guess is correct
         // is guess equal to random number?
