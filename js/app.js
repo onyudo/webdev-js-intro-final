@@ -34,7 +34,9 @@ function startGame() {
     randomNumber = Math.floor(Math.random() * 10) + 1;
 
     // keep track of attempts? starts at zero at game start
-    attempts = 0;
+    // do I really need this since I declare the same value above?
+    // might be necessary since I am saying that the restart function calls the startGame function
+    attempts = 0; // reset attempts?
 
     // Do I need to clear off other display messages from the previous game?
 
@@ -53,6 +55,8 @@ function restart() {
 function checkGuess() {
 
     // constant for player guess, input value
+    // get the value from the guessInput field, converting that value (which is a string) into an number, and then assign the result to the variable playerGuess
+    const playerGuess = parseInt(guessInput.value);
 
     // Validate that the input is a number, use isNAN
 
