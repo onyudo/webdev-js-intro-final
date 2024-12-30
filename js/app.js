@@ -55,10 +55,14 @@ function restart() {
 function checkGuess() {
 
     // constant for player guess, input value
-    // get the value from the guessInput field, converting that value (which is a string) into an number, and then assign the result to the variable playerGuess
+    // get the value from the guessInput field, convert that value (which is a string) into an number, and then assign the result to the variable playerGuess
     const playerGuess = parseInt(guessInput.value);
 
-    // Validate that the input is a number, use isNAN
+    // Validate that the input is a number, use isNaN
+    if (isNaN(playerGuess) || playerGuess < 1 || playerGuess > 10) {
+        guessMessage.innerText = "Please enter a number between 1 and 10.";
+        return;
+    }
 
     // Increment the guess counter
     // Push the number to the list keeping track of guesses
