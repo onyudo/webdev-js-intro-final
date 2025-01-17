@@ -75,7 +75,7 @@ function checkGuess() {
 
     // Validate that the input is a number and a number in the correct range, use isNaN
     if (isNaN(playerGuess) || playerGuess < 1 || playerGuess > 10 || !Number.isInteger(playerGuess)) {
-        guessMessage.innerText = "Please enter a whole number between 1 and 10.";
+        guessMessage.innerText = "Please enter a whole number between 1 and 10 without decimals.";
         return;
     }
 
