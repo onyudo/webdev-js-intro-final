@@ -70,11 +70,12 @@ function checkGuess() {
 
     // constant for player guess, input value
     // get the value from the guessInput field, convert that value (which is a string) into a number, and then assign the result to the variable playerGuess
-    const playerGuess = parseInt(guessInput.value);
+    // allow decimal numbers to be parsed, but we'll still reject them using !Number.isInteger(playerGuess)
+    const playerGuess = parseFloat(guessInput.value);
 
     // Validate that the input is a number and a number in the correct range, use isNaN
-    if (isNaN(playerGuess) || playerGuess < 1 || playerGuess > 10) {
-        guessMessage.innerText = "Please enter a number between 1 and 10.";
+    if (isNaN(playerGuess) || playerGuess < 1 || playerGuess > 10 || !Number.isInteger(playerGuess)) {
+        guessMessage.innerText = "Please enter a whole number between 1 and 10.";
         return;
     }
 
